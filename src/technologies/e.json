@@ -548,9 +548,11 @@
     ],
     "icon": "Elementor.png",
     "js": {
-      "elementorFrontend.getElements": ""
+      "elementorFrontend.getElements": "",
+      "elementorFrontendConfig": "",
+      "elementorFrontendConfig.version": "^(.+)$\\;version:\\1"
     },
-    "scriptSrc": "elementor/assets/js/[^/]+\\.js\\?ver=([\\d.]+)$\\;version:\\1",
+    "scriptSrc": "/elementor/assets/js/[^/]+\\.js\\?ver=([\\d.]+)$\\;version:\\1",
     "website": "https://elementor.com"
   },
   "Elementor Header & Footer Builder": {
