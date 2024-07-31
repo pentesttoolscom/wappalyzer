@@ -49,7 +49,6 @@
       "X-Pingback": ".+\\.php$"
     },
     "icon": "PHP.svg",
-    "url": "\\.php(?:$|\\?)",
     "website": "http://php.net"
   },
   "PHP-Nuke": {
