@@ -277,7 +277,7 @@
       ],
       "description": "ManageEngine provides better visibility into all your organizational assets, resolves technical issues proactively, and allows agents greater control of their assets",
       "html": [
-        "ADS|<title>ADAudit Plus</title>",
+        "<title>ADAudit Plus</title>",
         "<title>ManageEngine ServiceDesk Plus</title>|Help Desk Software by ManageEngine ServiceDesk Plus|ManageEngine SupportCenter Plus|AdManager Plus Authentication",
         "ManageEngine Endpoint Central",
         "Patch Manager Plus|www.patchmanagerplus.com|Vulnerability Manager Plus|http://www.vulnerabilitymanagerplus.com|Endpoint DLP Plus|http://endpointdlpplus.com",
@@ -498,7 +498,7 @@
         18
       ],
       "description": "Spring Cloud Gateway aims to provide a simple, yet effective way to route to APIs and provide cross cutting concerns to them.",
-      "html": "^(?=.*\bgateway\b)(?=.*\bactuator\b).*$",
+      "html": "^(?=.*\\bgateway\\b)(?=.*\\bactuator\\b).*$",
       "website": "https://spring.io/projects/spring-cloud-gateway"
     }
   }
