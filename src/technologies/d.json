@@ -987,7 +987,7 @@
     },
     "cpe": "cpe:2.3:a:djangoproject:django:*:*:*:*:*:*:*:*",
     "description": "Django is a Python-based free and open-source web application framework.",
-    "html": "(?:powered by <a[^>]+>Django ?([\\d.]+)?<\\/a>|<input[^>]*name=[\"']csrfmiddlewaretoken[\"'][^>]*>)\\;version:\\1",
+    "html": "(?:powered by <a[^>]+>Django ?([\\d.]+)?<\\/a>|<input[^>]*name=[\"']csrfmiddlewaretoken[\"'][^>]*>)\\;version:\\1|Django site admin|<form action=\"/admin/[^\"^>]*\" method=\"post\" id=\"login-form\"><div style='display:none;'><input type='hidden' id='csrfmiddlewaretoken' name='csrfmiddlewaretoken' value='[a-f\\d]{32}' /></div>|<input type=\"hidden\" name=\"this_is_the_login_form\" value=\"1\" />|Django tried these URL patterns, in this order",
     "icon": "Django.png",
     "implies": "Python",
     "js": {
@@ -1614,7 +1614,11 @@
       "X-Drupal-Cache": "",
       "X-Generator": "^Drupal(?:\\s([\\d.]+))?\\;version:\\1"
     },
-    "html": "<(?:link|style)[^>]+\"/sites/(?:default|all)/(?:themes|modules)/",
+    "html": [
+      "<(?:link|style)[^>]+\"/sites/(?:default|all)/(?:themes|modules)/",
+      "<script type=\"text/javascript\" src=\"[^\\\"]*/misc/drupal.js[^\"]*\"></script>|<[^>]+alt=\"Powered by Drupal, an open source content management system\"|@import \"[^\\\"]*/misc/drupal.css\"|jQuery.extend\\(Drupal.settings,|Drupal.extend\\(",
+      "ABOUT DRUPAL"
+    ],
     "icon": "Drupal.svg",
     "implies": "PHP",
     "js": {

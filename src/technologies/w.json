@@ -817,6 +817,7 @@
     "headers": {
       "Server": "^WebLogic\\sServer\\s([\\d\\.]+)?\\;version:\\1"
     },
+    "html": "WebLogic Server",
     "icon": "Oracle.svg",
     "implies": "JavaServer Pages",
     "website": "https://www.oracle.com/java/weblogic"
@@ -828,6 +829,7 @@
     "description": "Webmin is a free, open-source application for Linux server administration.",
     "icon": "Webmin.png",
     "implies": "Perl",
+    "html": "Webmin",
     "oss": true,
     "website": "https://www.webmin.com"
   },
@@ -1634,7 +1636,9 @@
     },
     "html": [
       "<link rel=[\"']stylesheet[\"'] [^>]+/wp-(?:content|includes)/",
-      "<link[^>]+s\\d+\\.wp\\.com"
+      "<link[^>]+s\\d+\\.wp\\.com",
+      "<meta name=\"generator\" content=\"WordPress.com\" />|<a href=\"http://www.wordpress.com\">Powered by WordPress</a>|<link rel='https://api.w.org/'",
+      "WordPress - Web publishing software"
     ],
     "icon": "WordPress.svg",
     "implies": [

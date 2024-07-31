@@ -279,7 +279,8 @@
       "mage-cache-storage": "",
       "mage-cache-storage-section-invalidation": "",
       "mage-translation-file-version": "",
-      "mage-translation-storage": ""
+      "mage-translation-storage": "",
+      "X-Magento-Cache-Debug": ""
     },
     "cpe": "cpe:2.3:a:magento:magento:*:*:*:*:*:*:*:*",
     "description": "Magento is an open-source ecommerce platform written in PHP.",
@@ -289,8 +290,15 @@
       },
       "script[type='text/x-magento-init']": {
         "exists": ""
+      },
+      "title": {
+        "text": "Log into Magento Admin Page"
       }
     },
+    "html": [
+      "type=\"text/x-magento-init\"|[mM]agento",
+      "images/logo.gif\" alt=\"Magento Commerce\" /></a></h1>|<link rel=\"stylesheet\" type=\"text/css\" href=\"[^\"]+/skin/frontend/[^\"]+/css/boxes.css\" media=\"all\"|<meta name=\"keywords\" content=\"Magento, Varien, E-commerce\" />|var searchForm = new Varien.searchForm\\('search_mini_form', 'search', '|,mage/cookies.js\" ></script>|<div id=\"noscript-notice\" class=\"magento-notice\">|<p>You must have JavaScript enabled in your browser to utilize the functionality of this website.</p>|Magento is a trademark of Magento Inc. Copyright &copy; ([0-9]{4}) Magento Inc"
+    ],
     "icon": "Magento.svg",
     "implies": [
       "PHP",
@@ -1545,7 +1553,9 @@
     ],
     "cookies": {
       "ASP.NET_SessionId": "",
-      "ASPSESSION": ""
+      "ASPSESSION": "",
+      "__RequestVerificationToken": "",
+      ".ASPXANONYMOUS=": ""
     },
     "cpe": "cpe:2.3:a:microsoft:asp.net:*:*:*:*:*:*:*:*",
     "description": "ASP.NET is an open-source, server-side web-application framework designed for web development to produce dynamic web pages.",
@@ -1725,6 +1735,10 @@
       "SPDesignerProgID": "",
       "_spBodyOnLoadCalled": ""
     },
+    "html": [
+      "<noscript><div class='noindex'>You may be trying to access this site from a secured browser on the server. Please enable scripts and reload this page.</div></noscript>|<noscript><div class='noindex'>Please enable scripts and reload this page. If your browser does not support script, then you can visit the minimal version of this site at <a href=|<meta name=\"CollaborationServer\" content=\"SharePoint Team Web Site\" />|<input type=\"hidden\" name=\"MSOWebPartPage_PostbackSource\" id=\"MSOWebPartPage_PostbackSource\" value=|<meta name=\"progid\" content=\"SharePoint.WebPartPage.Document\" />",
+      "^_spBodyOnLoadCalled$"
+    ],
     "meta": {
       "generator": "Microsoft SharePoint"
     },

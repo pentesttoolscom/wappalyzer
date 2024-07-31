@@ -29,7 +29,7 @@
       19
     ],
     "cpe": "cpe:2.3:a:zabbix:zabbix:*:*:*:*:*:*:*:*",
-    "html": "<body[^>]+zbxCallPostScripts",
+    "html": "<body[^>]+zbxCallPostScripts|Zabbix",
     "icon": "Zabbix.png",
     "implies": "PHP",
     "js": {
@@ -37,6 +37,9 @@
     },
     "meta": {
       "Author": "ZABBIX SIA\\;confidence:70"
+    },
+    "cookies": {
+      "zbx_session": ""
     },
     "url": "\\/zabbix\\/\\;confidence:30",
     "website": "http://zabbix.com"
@@ -320,6 +323,7 @@
     },
     "cpe": "cpe:2.3:a:zimbra:zimbra:*:*:*:*:*:*:*:*",
     "icon": "Zimbra.png",
+    "html": "<meta name=\"description\" content=\"Zimbra provides open source server and client software for messaging and collaboration. To find out more visit https://www.zimbra.com.\">|div id=\"ZLoginAppName\">Web Client</div>|title>Zimbra Web Client Sign In</title>|h1><a href=\"https://www.zimbra.com/\" id=\"bannerLink\" target=\"_new\" title='Zimbra'>|td><input id=\"password\" autocomplete=\"off\" class=\"zLoginField\" name=\"password\" type=\"password\" value=\"\" size=\"40\" maxlength=\"1024\"/></td>|<div id=\"ZLoginWhatsThis\" class=\"ZLoginInfoMessage\" style=\"display:none;\" onclick='showWhatsThis();' role=\"tooltip\">|div id=\"ZLoginNotice\" class=\"legalNotice-small\"><a target=\"_new\" href=\"https://www.zimbra.com\">Zimbra</a> :: the leader in open source messaging and collaboration ::",
     "implies": "Java",
     "website": "https://www.zimbra.com/"
   },

@@ -474,6 +474,10 @@
     "cpe": "cpe:2.3:a:elastic:elasticsearch:*:*:*:*:*:*:*:*",
     "description": "Elasticsearch is a search engine based on the Lucene library. It provides a distributed, multitenant-capable full-text search engine with an HTTP web interface and schema-free JSON documents.",
     "dom": "div#topsearchelastic_widget",
+    "headers": {
+      "kbn-name": "elasticsearch"
+    },
+    "html": "\"tagline\" : \"You Know, for Search\"\n}",
     "icon": "Elasticsearch.svg",
     "pricing": [
       "mid",

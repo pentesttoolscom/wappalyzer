@@ -45,7 +45,8 @@
     "description": "PHP is a general-purpose scripting language used for web development.",
     "headers": {
       "Server": "php/?([\\d.]+)?\\;version:\\1",
-      "X-Powered-By": "^php/?([\\d.]+)?\\;version:\\1"
+      "X-Powered-By": "^php/?([\\d.]+)?\\;version:\\1",
+      "X-Pingback": ".+\\.php$"
     },
     "icon": "PHP.svg",
     "url": "\\.php(?:$|\\?)",
@@ -2864,6 +2865,7 @@
     "cpe": "cpe:2.3:a:pulsesecure:pulse_connect_secure:*:*:*:*:*:*:*:*",
     "description": "Pulse Secure allows to deploy VPNs to securely to your internal resources.",
     "icon": "PulseSecure.png",
+    "html": "dana-na",
     "url": "/dana-na/auth/",
     "website": "https://www.pulsesecure.net/products/remote-access-overview/"
   },
