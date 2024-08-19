@@ -1396,15 +1396,9 @@
     ],
     "cpe": "cpe:2.3:a:adobe:coldfusion:*:*:*:*:*:*:*:*",
     "headers": {
-      "Cookie": "CFTOKEN=",
-      "page-completion-status": "(Abnormal|Normal)",
-      "Set-Cookie": "CFAUTHORIZATION_cfadmin=|CFID=|CFTOKEN="
+      "Cookie": "CFTOKEN="
     },
-    "html": [
-      "<!-- START headerTags\\.cfm",
-      "^(?=.*Enter your RDS or Admin password below)(?=.*Version:[\\s]*([^<]+)</strong><br />).*$",
-      "ColdFusion Administrator Login|<meta name=\"Author\" content=\"Copyright (\\(c\\)\\ )?[0-9]{4}-[0-9]{4} Macromedia( Corp|, Inc)\\. All rights reserved\\.\">|{   document.write(\"<link rel='STYLESHEET' type='text/css' href='./cfadmin_ns.css'>\");}|<form name=\"loginform\" action=\"./enter.cfm\" method=\"POST\" onSubmit=\"cfadminPassword.value = hex_hmac_sha1(salt.value, hex_sha1(cfadminPassword.value));\" >|<input name=\"cfadminPassword\" type=\"Password\" size=\"15\" style=\"width:15em;\" class=\"label\" maxlength=\"100\" id=\"admin_login\">|Macromedia, the Macromedia logo, Macromedia ColdFusion and ColdFusion are<br />|<tr><td><img src=\"./images/mx_copyrframe.gif\" width=\"2\" height=\"57\" border=\"0\" alt=\"ColdFusion MX\" hspace=\"10\"></td>"
-    ],
+    "html": "<!-- START headerTags\\.cfm",
     "icon": "Adobe ColdFusion.svg",
     "implies": "CFML",
     "js": {
@@ -3045,10 +3039,6 @@
       "Server": "^Apache-Coyote",
       "X-Powered-By": "\\bTomcat\\b(?:-([\\d.]+))?\\;version:\\1"
     },
-    "html": [
-      "Apache Tomcat/([456]\\.\\d+\\.\\d+)",
-      "<title>Apache Tomcat</title>|CATALINA_HOME/webapps/ROOT/index\\.html|org\\.apache\\.tomcat\\..*java\\.lang\\.Thread\\.run"
-    ],
     "icon": "Apache Tomcat.svg",
     "implies": "Java",
     "website": "http://tomcat.apache.org"
@@ -3848,19 +3838,8 @@
         "text": "Atlassian Confluence ([\\d.]+)\\;version:\\1"
       }
     },
-    "html": [
-      "Log In - Confluence",
-      "com.atlassian",
-      "<meta id=\"confluence-context-path\" name=\"confluence-context-path\" content=\"\">|<li class=\"noprint\"><a href=\"http://www.atlassian.com/software/confluence\" class=\"hover-footer-link\">Atlassian Confluence</a>|<noscript><h1>Warning: either you have javascript disabled or your browser does not support javascript. To work properly, this page requires javascript to be enabled.</h1></noscript>|<a class=\"seo-link\" href=\"http://www.atlassian.com/software/jira/bug-tracking.jsp\">Bug tracking</a> and <a class=\"seo-link\" href=\"http://www.atlassian.com/software/jira/tour/project-tracking.jsp\">project tracking</a> for <a class=\"seo-link\" href=\"http://www.atlassian.com/software/jira/tour/software-development.jsp\">software development</a> powered by <a href=\"http://www.atlassian.com/software/jira\" class=\"smalltext\">Atlassian JIRA</a>|<meta name=\"decorator\" content=\"atl.general\">"
-    ],
     "headers": {
-      "X-Confluence-Request-Time": "",
-      "Set-Cookie": "atlassian.xsrf.token=([A-Za-z0-9-_]+)",
-      "x-confluence-cluster-node": "",
-      "x-confluence-request-time": "",
-      "x-arequestid": "^[\\d]+x[\\d]+x[\\d]+$",
-      "x-ausername": "",
-      "set-cookie": "atlassian\\.xsrf\\.token="
+      "X-Confluence-Request-Time": ""
     },
     "icon": "Atlassian Confluence.svg",
     "implies": "Java",
