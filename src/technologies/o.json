@@ -1707,6 +1707,11 @@
     "headers": {
       "X-OWA-Version": "([\\d\\.]+)?\\;version:\\1"
     },
+    "dom": {
+      "title": {
+        "text": "^Outlook$|^Outlook Web App$"
+      }
+    },
     "html": "<link[^>]+/owa/auth/([\\d\\.]+)/themes/resources\\;version:\\1",
     "icon": "Outlook.svg",
     "implies": "Microsoft ASP.NET",

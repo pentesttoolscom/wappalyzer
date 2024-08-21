@@ -268,9 +268,17 @@
     "cpe": "cpe:2.3:a:jenkins:jenkins:*:*:*:*:*:*:*:*",
     "description": "Jenkins is an open-source automation tool written in Java with plugins built for Continuous Integration (CI) purposes.",
     "headers": {
-      "X-Jenkins": "([\\d.]+)\\;version:\\1"
+      "X-Jenkins": "([\\d.]+)\\;version:\\1",
+      "X-Hudson": "",
+      "X-Hudson-Theme": "",
+      "X-Hudson-CLI-Port": "",
+      "X-Jenkins-CLI-Port": "",
+      "X-Instance-Identity": ""
     },
-    "html": "<span class=\"jenkins_ver\"><a href=\"https://jenkins\\.io/\">Jenkins ver\\. ([\\d.]+)\\;version:\\1",
+    "html": [
+      "<span class=\"jenkins_ver\"><a href=\"https://jenkins\\.io/\">Jenkins ver\\. ([\\d.]+)\\;version:\\1",
+      "<script>var isRunAsTest=false; var rootURL=\"[^\"]*\";.*</script>"
+    ],
     "icon": "Jenkins.png",
     "implies": "Java",
     "js": {
@@ -529,7 +537,10 @@
     "headers": {
       "X-Content-Encoded-By": "Joomla! ([\\d.]+)\\;version:\\1"
     },
-    "html": "(?:<div[^>]+id=\"wrapper_r\"|<(?:link|script)[^>]+(?:feed|components)/com_|<table[^>]+class=\"pill)\\;confidence:50",
+    "html": [
+      "(?:<div[^>]+id=\"wrapper_r\"|<(?:link|script)[^>]+(?:feed|components)/com_|<table[^>]+class=\"pill)\\;confidence:50",
+      "Joomla! - Open Source Content Management"
+    ],
     "icon": "Joomla.svg",
     "implies": "PHP",
     "js": {

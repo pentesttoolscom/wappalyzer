@@ -32,7 +32,15 @@ const categories = JSON.parse(
   fs.readFileSync(path.resolve(`${__dirname}/categories.json`))
 )
 
-let technologies = {}
+/*
+  For easier management, we will load another file, custom.json
+  This one will contain our custom definitions for technologies fingerprinting
+*/
+let technologies = JSON.parse(
+  fs.readFileSync(
+    path.resolve(`${__dirname}/technologies/custom.json`)
+  )
+)
 
 for (const index of Array(27).keys()) {
   const character = index ? String.fromCharCode(index + 96) : '_'
@@ -420,7 +428,9 @@ class Driver {
 class Site {
   constructor(url, headers = {}, driver) {
     ;({
-      options: this.options,
+      // In order to load multiple pages with different settings at the same time,
+      // perform a deep copy of the site options
+      options: {...this.options},
       browser: this.browser,
       init: this.initDriver,
     } = driver)
@@ -548,6 +558,7 @@ class Site {
     let page
 
     try {
+      this.log(`Opening page ${url} with noScripts=${this.options.noScripts} and timeout=${this.options.maxWait}`)
       page = await this.browser.newPage()
 
       if (!page || page.isClosed()) {
@@ -760,6 +771,8 @@ class Site {
 
       // HTML
       let html = await this.promiseTimeout(page.content(), '', 'Timeout (html)')
+      this.log(`HTML returned:`)
+      this.log(html)
 
       if (this.options.htmlMaxCols && this.options.htmlMaxRows) {
         const batches = []
@@ -834,6 +847,8 @@ class Site {
           '',
           'Timeout (text)'
         )
+        this.log(`TEXT returned:`)
+        this.log(text)
 
         // CSS
         css = await this.promiseTimeout(

@@ -744,7 +744,11 @@
       44
     ],
     "description": "TeamCity is a build management and continuous integration server from JetBrains.",
-    "html": "<span class=\"versionTag\"><span class=\"vWord\">Version</span> ([\\d\\.]+)\\;version:\\1",
+    "html": [
+      "<span class=\"versionTag\"><span class=\"vWord\">Version</span> ([\\d\\.]+)\\;version:\\1",
+      "TeamCity",
+      "<title>Log in to TeamCity — TeamCity</title>"
+    ],
     "icon": "TeamCity.svg",
     "implies": [
       "Apache Tomcat",

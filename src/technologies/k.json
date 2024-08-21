@@ -461,7 +461,7 @@
       "kbn-name": "kibana",
       "kbn-version": "^([\\d.]+)$\\;version:\\1"
     },
-    "html": "<title>Kibana</title>",
+    "html": "<title>Kibana</title>|<body kibana",
     "icon": "kibana.svg",
     "implies": [
       "Node.js",

@@ -14,6 +14,16 @@ link('./src/wappalyzer.js', './src/drivers/npm/wappalyzer.js')
 link('./src/categories.json', './src/drivers/webextension/categories.json')
 link('./src/categories.json', './src/drivers/npm/categories.json')
 
+// Also add our custom.json definition file
+link(
+  './src/technologies/custom.json',
+  './src/drivers/webextension/technologies/custom.json'
+)
+link(
+  './src/technologies/custom.json',
+  './src/drivers/npm/technologies/custom.json'
+)
+
 for (const index of Array(27).keys()) {
   const character = index ? String.fromCharCode(index + 96) : '_'
 
