@@ -500,5 +500,13 @@
       "description": "Spring Cloud Gateway aims to provide a simple, yet effective way to route to APIs and provide cross cutting concerns to them.",
       "html": "^(?=.*\\bgateway\\b)(?=.*\\bactuator\\b).*$",
       "website": "https://spring.io/projects/spring-cloud-gateway"
+    },
+    "Oracle WebLogic": {
+      "cats": [
+        47
+      ],
+      "description": "Oracle WebLogic Server is a unified and extensible platform for developing, deploying and running enterprise applications.",
+      "html": "<title>Oracle WebLogic",
+      "website": "https://www.oracle.com/java/weblogic/"
     }
   }
